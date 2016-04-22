@@ -1,0 +1,76 @@
+{
+  "story": [
+    {
+      "name": "start",
+      "text": [
+        "I",
+        "can't",
+        "move."
+      ],
+      "links": [
+        {"name": "next", "to": "question"}
+      ]
+    },
+    {
+      "name": "question",
+      "text": [
+        "What am I supposed to be doing today?"
+      ],
+      "links": [
+        {"name": "basketball", "to": "answer-basketball"},
+        {"name": "school", "to": "answer-school"}
+      ]
+    },
+    {
+      "name": "answer-basketball",
+      "text": [
+        "I really don't feel like being laughed at today",
+        "...",
+        "Shit."
+      ],
+      "links": [
+        {"name": "Fuck it. I'll skip!", "to": "answer-skip"},
+        {"name": "I'll just go.", "to": "answer-continue"}
+      ]
+    },
+    {
+      "name": "answer-skip",
+      "text": [
+        "LOL. I'm not going.",
+        "That's it."
+      ],
+      "links": []
+    },
+    {
+      "name": "answer-continue",
+      "text": [
+        "Ugh. I need to go, I've already skipped the past two weeks",
+        "It can't be that bad right?"
+      ]
+    },
+    {
+      "name": "answer-school",
+      "text": [
+        "What subject again?"
+      ],
+      "links": [
+        {"name": "maths", "to": "math-subject"},
+        {"name": "english", "to": "english-subject"}
+      ]
+    },
+    {
+      "name": "math-subject",
+      "text": [
+        "Ugh. That's better than English at least"
+      ],
+      "links": []
+    },
+    {
+      "name": "english-subject",
+      "text": [
+        "FUCK MY LIFE."
+      ],
+      "links": []
+    }
+  ]
+}
